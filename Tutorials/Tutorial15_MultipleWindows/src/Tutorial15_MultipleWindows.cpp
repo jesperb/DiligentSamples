@@ -496,6 +496,7 @@ int WINAPI WinMain(_In_ HINSTANCE     hInstance,
             case RENDER_DEVICE_TYPE_D3D12: TitleSS << L" (D3D12)"; break;
             case RENDER_DEVICE_TYPE_GL: TitleSS << L" (GL)"; break;
             case RENDER_DEVICE_TYPE_VULKAN: TitleSS << L" (VK)"; break;
+            default: break;
         }
         TitleSS << " - Window " << i;
         auto Title = TitleSS.str();

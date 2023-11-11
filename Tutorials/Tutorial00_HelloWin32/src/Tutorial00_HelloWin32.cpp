@@ -435,6 +435,7 @@ int WINAPI WinMain(_In_ HINSTANCE     hInstance,
         case RENDER_DEVICE_TYPE_D3D12: Title.append(L" (D3D12)"); break;
         case RENDER_DEVICE_TYPE_GL: Title.append(L" (GL)"); break;
         case RENDER_DEVICE_TYPE_VULKAN: Title.append(L" (VK)"); break;
+        default: break;
     }
     // Register our window class
     WNDCLASSEX wcex = {sizeof(WNDCLASSEX), CS_HREDRAW | CS_VREDRAW, MessageProc,
